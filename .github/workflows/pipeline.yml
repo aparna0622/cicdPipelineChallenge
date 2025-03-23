@@ -15,8 +15,9 @@ jobs:
     name: create-artifacts
     runs-on: ubuntu-latest
     steps:
-    - name: first-step
+    - name: first-step-checkout-repo
       uses: actions/checkout@v4
-    -  name: second-step
-       run: |
-        python hello.py
+    -  name: second-step-upload-artifact
+       uses: actions/upload-artifact@v4
+       with:
+         path: .
