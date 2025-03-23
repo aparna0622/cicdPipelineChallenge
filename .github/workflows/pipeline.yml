@@ -20,4 +20,5 @@ jobs:
     -  name: second-step-upload-artifact
        uses: actions/upload-artifact@v4
        with:
+         name: hello-artifact
          path: .
