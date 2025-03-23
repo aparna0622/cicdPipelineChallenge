@@ -1,0 +1,10 @@
+name: pipeline
+on: push
+jobs:
+ checkout:
+   name: checkout-code
+   runs-on: ubuntu-latest
+   
+ create-artifact:
+    name: create-artifacts
+    runs-on: ubuntu-latest
